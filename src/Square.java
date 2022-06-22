@@ -1,12 +1,17 @@
 public class Square extends Shape {
+private double side;
+
+    public Square(double side) {
+        this.side = side;
+    }
 
     @Override
     public double square() {
-        return 0;
+        return side*side;
     }
 
     @Override
     public double perimeter() {
-        return 0;
+        return side*4;
     }
 }
